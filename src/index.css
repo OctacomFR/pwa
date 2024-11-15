@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -70,7 +74,6 @@ h6 {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
   touch-action: manipulation;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
