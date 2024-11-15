@@ -1,6 +1,7 @@
 import { RouterProvider, createRouter } from "@tanstack/react-router";
-import React, { StrictMode } from "react";
+import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
+// @ts-expect-error - no types for index.css
 import "./index.css";
 
 // Import the generated route tree

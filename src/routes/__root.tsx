@@ -1,15 +1,17 @@
-import { Link, Outlet, createRootRoute } from "@tanstack/react-router";
+import { Outlet, createRootRoute } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/router-devtools";
+import { AppNavbar } from "../components/app-navbar";
+import { Providers } from "../components/providers";
+import { PwaUpdatePrompt } from "../components/pwa-update-prompt";
 
 export const Route = createRootRoute({
   component: () => (
-    <>
-      <div className="p-2 flex gap-2">
-        <Link to="/">Home</Link>{" "}
-      </div>
-      <hr />
+    <Providers>
+      <AppNavbar>
       <Outlet />
       <TanStackRouterDevtools />
-    </>
+      <PwaUpdatePrompt />
+      </AppNavbar>
+    </Providers>
   ),
 });

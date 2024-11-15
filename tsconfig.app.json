@@ -9,7 +9,6 @@
     "checkJs": true,
 
     "esModuleInterop": true,
-    "exactOptionalPropertyTypes": true,
 
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
