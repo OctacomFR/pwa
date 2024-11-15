@@ -11,6 +11,7 @@ export default defineConfig({
     VitePWA({
       registerType: "prompt",
       manifest: {
+        theme_color: "#000000",
         icons: [
           {
             src: "pwa-64x64.png",
